@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  main{
+    background-color: #171717;
+  }
+  
+  body {
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0 !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ea07b9;
+  }
+  
+  .font-esthetic {
+    font-family: "Sacramento", cursive !important;
+    color: #ffffff !important;
+  }
+  
+  .font-arabic {
+    font-family: "Noto Naskh Arabic", serif !important;
+    color: #ffffff !important;
+  }
+
+  .container h4{
+    color: #ffffff;
+  }
+  
+  .img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .img-crop > img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+  
+  .btn-music {
+    position: fixed;
+    bottom: 9vh;
+    right: 2vh;
+    z-index: 1055;
+  }
+  
+  .loading-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner-bg.png);
+    z-index: 1056 !important;
+  }
+  
+  .card-body {
+    overflow-wrap: break-word !important;
+    background-color: #111111;
+  }
+  
+  .mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #fdff00;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+  
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  .mouse-animation > .scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #fdff00;
+    animation-name: scroll;
+    animation-duration: 5.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .dark-section {
+    background-color: #111111 !important;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  
+  .pink-section {
+    background-color: #FFC7C7 !important;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  .grey-section {
+    background-color: #171717 !important;
+    margin-top: -5px;
+    margin-bottom: 80px;
+  }
+  
+  .blue-section {
+    background-color: #7fcdff !important;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  
+  footer {
+    background-color: #111111 !important;
+    margin-top: -5px;
+    padding-bottom: 4rem;
+  }
+
+  .section-divider {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 5px solid #ffffff; /* Warna dan style garis dapat disesuaikan */
+    margin: 50px 50px; /* Atur jarak atas dan bawah sesuai kebutuhan */
+  }
+  
+  
+
+    /* About Section */
+    .about .wrapper {
+      display: grid;
+      gap: 50px;
+      margin-block-end: 70px;
+    }
+    
+    .progress-list .label-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-block-end: 5px;
+    }
+    
+    .progress-item {
+      margin-bottom: 15px;
+    }
+    
+    .progress {
+      background-color: #fff;
+      height: 12px;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .progress-fill {
+      height: inherit;
+    }
+    
+    .about-card {
+      text-align: center;
+      background-color: #000;
+      padding: 30px 20px;
+      border-radius: 8px;
+    }
+    
+    .about-card .card-icon i {
+      font-size: 45px;
+    }
+    
+    .about-card .card-title {
+      margin: 16px 10px;
+    }
+    
+    .about-card .card-text {
+      font-size: 16px;
+    }
+    
+    /* About Section */
+
+    .teman {
+      font-family: 'Segoe UI', 'Open Sans', sans-serif;
+      color: #333;
+      position: relative;
+      margin: 10px 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .wish {
+      padding: 0;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      margin: 5px 100px;
+      gap: 20px;
+      padding-bottom: 100px;
+      position: relative;
+      width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    grid-column: span 8;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-image: linear-gradient(to right, #fdfcfb 0%, #f5f1cd 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px, 5px, 15px;
+  }
+
+  /* responsive */
+@media screen and (min-width: 550px) {
+  .card {
+      grid-column: span 4;
+  }
+}
+
+@media(max-width: 767px) {
+
+  .wish {
+      grid-template-columns: repeat(8, 1fr);
+      margin: 5px 30px;
+  }
+  .card {
+      grid-column: span 4;
+  }
+}
+
+@media(max-width: 574px) {
+
+  .wish {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.action {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.action i {
+  width: 20px;
+  font-size: 20px
+}
+
+.fa-ellipsis-v {
+  color: rgb(164, 36, 250);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 8px 0 24px;
+}
+
+.header .playing {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.album-cover {
+  margin-bottom: 24px;
+}
+
+.album-cover img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.music-info {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.music-info .song-name {
+  margin-bottom: 8px;
+  font-size: 20px
+}
+.music-info .song-artist {
+  color: gray;
+  font-size: 12px;
+}
+
+.timeline .time {
+  font-size: 12px;
+}
+.timeline .time .current {
+  float: left;
+}
+
+.timeline .time .total {
+  float: right;
+}
+
+.timeline .time:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline .slider {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: grey;
+  cursor: pointer;
+  position: relative;
+}
+
+.timeline .slider .progress {
+  width: 30%;
+  height: 100%;
+  pointer-events: none;
+  background-color: #e74c3c;
+  position: absolute;
+}
+
+.timeline .slider .progress .pin {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  pointer-events: all;
+  background-color: black;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+}
+
+.controls {
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+}
+
+
+  
+  
